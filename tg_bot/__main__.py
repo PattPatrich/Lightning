@@ -19,21 +19,14 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 hoi {}, my name is {}! 
-
-... 
-
-im a group manager bot for @IsItIsAsItIs.
-
-"""
+I'm the group manager bot for @IsItIsAsItIs.
+ """
 
 HELP_STRINGS = """
 
 Hello! my name *{}*.
-
 Join @IsItIsAsItIs ...
-{}
-And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
+""".format(dispatcher.bot.first_name)
 
 DONATE_STRING = """Hello, My original creator is [this person](t.me/SonOfLars).
 It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
