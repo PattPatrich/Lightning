@@ -221,9 +221,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_text("Share @IsItIsAsItIs 😎.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Share IsItIsAsItIs 😎",
+                                                [[InlineKeyboardButton(text="Click Here 😎",
                                                                        url="http://t.me/share/url?url=%2A%2AHai%20%F0%9F%92%95%E2%9D%A4%2C%20%2A%2A%0A__You%20are%20heartily%20welcomed%20to%20IsItIsAsItIs%20Family__%0A%2A%2ALink%20%3A%2A%2A%20https://t.me/IsItIsAsItIs%20%F0%9F%94%A5"
                                                                            )]]))
         return
