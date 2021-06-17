@@ -20,16 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
 
-im a group manager bot maintained by  [this person](tg://user?id={}).
-
-My future updates will be put into This Channel - @MarieChechi & My Support Group @InFoTelGroup.
-
-This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English),
-you can create clone same like me..
-
-For more commands click /help...
-
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
+im a group manager bot for @IsItIsAsItIs.
 
 """
 
@@ -37,14 +28,7 @@ HELP_STRINGS = """
 
 Hello! my name *{}*.
 
-*Main* available commands:
- - /start: Start the bot...
- - /help: help....
- - /donate: To find out more about donating!
- - /settings:
-   - in PM: To find out what SETTINGS you have set....
-   - in a group:
-
+Join @IsItIsAsItIs ...
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
@@ -237,9 +221,9 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Help",
-                                                                       url="t.me/{}?start=help".format(
-                                                                           bot.username))]]))
+                                                [[InlineKeyboardButton(text="Share IsItIsAsItIs 😎",
+                                                                       url="http://t.me/share/url?url=%2A%2AHai%20%F0%9F%92%95%E2%9D%A4%2C%20%2A%2A%0A__You%20are%20heartily%20welcomed%20to%20IsItIsAsItIs%20Family__%0A%2A%2ALink%20%3A%2A%2A%20https://t.me/IsItIsAsItIs%20%F0%9F%94%A5"
+                                                                           )]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
